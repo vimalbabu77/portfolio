@@ -1,27 +1,18 @@
 import './style.css';
+import { renderHeader } from './header.js';
+import { renderFooter } from './footer.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const header = document.getElementById('header');
+    const headerContainer = document.getElementById('global-header');
+    const footerContainer = document.getElementById('global-footer');
 
-    mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
+    if (headerContainer) {
+        headerContainer.innerHTML = renderHeader();
+    }
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('header-shrunk');
-        } else {
-            header.classList.remove('header-shrunk');
-        }
-    });
+    if (footerContainer) {
+        footerContainer.innerHTML = renderFooter();
+    }
 
-    // Close mobile menu when a link is clicked
-    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-    mobileMenuLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-        });
-    });
+    console.log('Vimal Babu Portfolio - Components Loaded');
 });

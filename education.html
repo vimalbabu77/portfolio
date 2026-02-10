@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Vimal Babu Kalappattil</title>
+    <link href="/src/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#ffffff',
+                        foreground: '#111111',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-[#111] selection:bg-black selection:text-white">
+
+    <header id="global-header"></header>
+
+    <main class="pt-32 pb-32 px-6 max-w-4xl mx-auto">
+        
+        <header class="mb-24">
+            <h1 class="text-5xl font-semibold tracking-tight mb-8">Academic Foundation.</h1>
+            <p class="text-xl text-gray-500 leading-relaxed max-w-2xl">
+                My education in computer science provides the structural framework for my creative design process.
+            </p>
+        </header>
+
+        <section class="mb-24">
+            <div class="bg-gray-50 p-12 rounded-3xl border border-gray-100">
+                <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-8">Degree</h2>
+                <h3 class="text-3xl font-medium mb-4">Master of Computer Applications (MCA)</h3>
+                <p class="text-gray-500 leading-relaxed text-lg mb-8">
+                    A comprehensive program focused on the intersection of systematic computing and application development. This degree has been instrumental in shaping my dual proficiency in creative web development and systematic IT administration.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-gray-200/50">
+                    <div>
+                        <h4 class="text-sm font-medium text-black mb-3">Key Learnings</h4>
+                        <ul class="text-sm text-gray-500 space-y-2">
+                            <li>Advanced Data Structures</li>
+                            <li>Software Engineering Principles</li>
+                            <li>Database Management Systems</li>
+                            <li>Web Technology Architectures</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-medium text-black mb-3">Impact on Design</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            Understanding technical feasibility during the design phase allows for more efficient problem-solving and ensures that creative visions are functionally achievable.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="global-footer"></footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

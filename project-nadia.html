@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Nadia Buhannad - Vimal Babu Kalappattil</title>
+    <link href="/src/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#ffffff',
+                        foreground: '#111111',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-[#111] selection:bg-black selection:text-white">
+
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md">
+        <div class="max-w-4xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-lg font-medium tracking-tight">Vimal Babu.</a>
+            <div class="flex gap-8">
+                <a href="portfolio.html" class="text-sm font-medium text-gray-400 hover:text-black transition-colors">Portfolio</a>
+                <a href="about.html" class="text-sm font-medium text-gray-400 hover:text-black transition-colors">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-32 px-6 max-w-4xl mx-auto">
+        
+        <header class="mb-16">
+            <a href="portfolio.html" class="text-sm font-medium text-gray-400 hover:text-black transition-colors mb-8 inline-block">← Back to Portfolio</a>
+            <h1 class="text-5xl font-semibold tracking-tight mb-4">Dr. Nadia Buhannad.</h1>
+            <p class="text-lg text-gray-400 font-medium">UI/UX & User Research</p>
+        </header>
+
+        <section class="mb-16">
+            <div class="aspect-[16/9] bg-[#f9f9f9] rounded-3xl overflow-hidden border border-[#eeeeee] mb-16">
+                <img src="https://placehold.co/1200x675/fcfcfc/111111/svg?text=Dr.+Nadia+UX+Research" alt="Dr. Nadia Buhannad" class="w-full h-full object-cover">
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="md:col-span-2">
+                    <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-6">Overview</h2>
+                    <p class="text-gray-500 leading-relaxed mb-8">
+                        This project for Dr. Nadia Buhannad focused on a high-end UI/UX specialized solution. The objective was to create a user-centric platform that provided an intuitive journey for users seeking professional services.
+                    </p>
+                    <p class="text-gray-500 leading-relaxed">
+                        I conducted extensive user research and A/B testing to refine the user journey, ensuring the interface was both aesthetically pleasing and functional.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-6">Role & Tools</h2>
+                    <ul class="text-sm text-gray-500 space-y-4">
+                        <li>
+                            <span class="block text-black font-medium">Role</span>
+                            UI/UX Specialist
+                        </li>
+                        <li>
+                            <span class="block text-black font-medium">Tools</span>
+                            Figma, User Testing, Prototyping
+                        </li>
+                        <li>
+                            <span class="block text-black font-medium">Duration</span>
+                            4 Months
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-20 px-6 border-t border-[#f5f5f5]">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <p class="text-sm text-gray-400">© 2026 Vimal Babu Kalappattil</p>
+        </div>
+    </footer>
+
+</body>
+</html>

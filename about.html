@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Vimal Babu Kalappattil</title>
+    <link href="/src/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#ffffff',
+                        foreground: '#111111',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-[#111] selection:bg-black selection:text-white">
+
+    <header id="global-header"></header>
+
+    <main class="pt-32 pb-32 px-6 max-w-4xl mx-auto">
+        
+        <header class="mb-24">
+            <h1 class="text-5xl font-semibold tracking-tight mb-8">Personal Story.</h1>
+            <p class="text-xl text-gray-500 leading-relaxed max-w-2xl">
+                I am a Web Designer and UI/UX Specialist with a background in Computer Applications. I focus on bridging the gap between technical feasibility and creative design.
+            </p>
+        </header>
+
+        <section class="mb-24">
+            <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-12">Experience</h2>
+            <div class="space-y-16">
+                <div>
+                    <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-4">
+                        <h3 class="text-2xl font-medium">one.com, Dubai</h3>
+                        <span class="text-sm text-gray-400 font-medium">Current</span>
+                    </div>
+                    <p class="text-gray-500 leading-relaxed max-w-2xl">
+                        Delivered 20+ production-ready AI website templates. Working at the intersection of design systems and automated development workflows.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-4">
+                        <h3 class="text-2xl font-medium">GlobalTT</h3>
+                        <span class="text-sm text-gray-400 font-medium">2019 — 2023</span>
+                    </div>
+                    <p class="text-gray-500 leading-relaxed max-w-2xl">
+                        Managed corporate web development and exhibition design. Led digital transformation initiatives for international stakeholders.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-24">
+            <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-12">Capabilities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                <div>
+                    <h4 class="text-sm font-medium mb-4 text-black">Design</h4>
+                    <ul class="text-gray-500 space-y-2 text-sm">
+                        <li>UI/UX Design</li>
+                        <li>Figma Systems</li>
+                        <li>Adobe Creative Suite</li>
+                        <li>Brand Identity</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-medium mb-4 text-black">Technical</h4>
+                    <ul class="text-gray-500 space-y-2 text-sm">
+                        <li>Modern HTML/CSS</li>
+                        <li>Tailwind / Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>WordPress / PHP</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-8">Education</h2>
+            <div class="bg-gray-50 p-8 rounded-2xl">
+                <h3 class="text-xl font-medium mb-2">Master of Computer Applications (MCA)</h3>
+                <p class="text-gray-500 leading-relaxed">
+                    A rigorous academic foundation that informs my technical approach to design, ensuring all creative solutions are grounded in architectural soundness.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="global-footer"></footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

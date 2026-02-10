@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Vimal Babu Kalappattil</title>
+    <link href="/src/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#ffffff',
+                        foreground: '#111111',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-[#111] selection:bg-black selection:text-white">
+
+    <header id="global-header"></header>
+
+    <main class="pt-32 pb-32 px-6 max-w-6xl mx-auto">
+        
+        <header class="mb-24">
+            <h1 class="text-5xl font-semibold tracking-tight mb-8">Selected Works.</h1>
+            <p class="text-xl text-gray-500 leading-relaxed max-w-2xl">
+                A collection of projects where design meets technical excellence.
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
+            
+            <!-- Project Card -->
+            <a href="project-ipseos.html" class="group cursor-pointer">
+                <div class="aspect-[16/10] bg-[#f9f9f9] rounded-2xl mb-6 overflow-hidden border border-[#eeeeee] transition-all duration-500 group-hover:border-black/5 group-hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+                    <img src="https://placehold.co/1200x800/fcfcfc/111111/svg?text=IPSEOS" alt="IPSEOS" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <h3 class="text-xl font-medium mb-1">IPSEOS</h3>
+                <p class="text-sm text-gray-400 mb-4">Digital Identity & Design Systems</p>
+                <div class="h-px w-8 bg-black transform origin-left transition-all duration-500 group-hover:w-full"></div>
+            </a>
+
+            <!-- Project Card -->
+            <a href="project-softsat.html" class="group cursor-pointer">
+                <div class="aspect-[16/10] bg-[#f9f9f9] rounded-2xl mb-6 overflow-hidden border border-[#eeeeee] transition-all duration-500 group-hover:border-black/5 group-hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+                    <img src="https://placehold.co/1200x800/fcfcfc/111111/svg?text=E-SoftSat" alt="E-SoftSat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <h3 class="text-xl font-medium mb-1">E-SoftSat</h3>
+                <p class="text-sm text-gray-400 mb-4">Corporate Web Ecosystem</p>
+                <div class="h-px w-8 bg-black transform origin-left transition-all duration-500 group-hover:w-full"></div>
+            </a>
+
+            <!-- Project Card -->
+            <a href="project-nadia.html" class="group cursor-pointer">
+                <div class="aspect-[16/10] bg-[#f9f9f9] rounded-2xl mb-6 overflow-hidden border border-[#eeeeee] transition-all duration-500 group-hover:border-black/5 group-hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+                    <img src="https://placehold.co/1200x800/fcfcfc/111111/svg?text=Dr.+Nadia" alt="Dr. Nadia Buhannad" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <h3 class="text-xl font-medium mb-1">Dr. Nadia Buhannad</h3>
+                <p class="text-sm text-gray-400 mb-4">UI/UX & User Research</p>
+                <div class="h-px w-8 bg-black transform origin-left transition-all duration-500 group-hover:w-full"></div>
+            </a>
+
+            <!-- Project Card -->
+            <a href="project-flabba.html" class="group cursor-pointer">
+                <div class="aspect-[16/10] bg-[#f9f9f9] rounded-2xl mb-6 overflow-hidden border border-[#eeeeee] transition-all duration-500 group-hover:border-black/5 group-hover:shadow-[0_8_30px_rgb(0,0,0,0.04)]">
+                    <img src="https://placehold.co/1200x800/fcfcfc/111111/svg?text=Flabba" alt="Flabba" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                </div>
+                <h3 class="text-xl font-medium mb-1">Flabba</h3>
+                <p class="text-sm text-gray-400 mb-4">Workflow & Production Design</p>
+                <div class="h-px w-8 bg-black transform origin-left transition-all duration-500 group-hover:w-full"></div>
+            </a>
+
+        </div>
+    </main>
+
+    <footer id="global-footer"></footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

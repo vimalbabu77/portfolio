@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPSEOS - Vimal Babu Kalappattil</title>
+    <link href="/src/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#ffffff',
+                        foreground: '#111111',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-[#111] selection:bg-black selection:text-white">
+
+    <nav class="fixed top-0 w-full z-50 bg-[#111111]/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-4xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center">
+                <img src="docs/images/logo.png" alt="Vimal Babu" class="h-8 w-auto brightness-0 invert">
+            </a>
+            <div class="flex gap-8">
+                <a href="portfolio.html" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">Portfolio</a>
+                <a href="about.html" class="text-sm font-medium text-gray-400 hover:text-white transition-colors">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-32 px-6 max-w-4xl mx-auto">
+        
+        <header class="mb-16">
+            <a href="portfolio.html" class="text-sm font-medium text-gray-400 hover:text-black transition-colors mb-8 inline-block">← Back to Portfolio</a>
+            <h1 class="text-5xl font-semibold tracking-tight mb-4">IPSEOS.</h1>
+            <p class="text-lg text-gray-400 font-medium">Digital Identity & Design Systems</p>
+        </header>
+
+        <section class="mb-16">
+            <div class="aspect-[16/9] bg-[#f9f9f9] rounded-3xl overflow-hidden border border-[#eeeeee] mb-16">
+                <img src="https://placehold.co/1200x675/fcfcfc/111111/svg?text=IPSEOS+Showcase" alt="IPSEOS" class="w-full h-full object-cover">
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="md:col-span-2">
+                    <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-6">Overview</h2>
+                    <p class="text-gray-500 leading-relaxed mb-8">
+                        IPSEOS involved a comprehensive overhaul of the digital brand identity. The goal was to create a cohesive design system that could be scaled across multiple platforms while maintaining strict brand consistency.
+                    </p>
+                    <p class="text-gray-500 leading-relaxed">
+                        The project focused on high-impact digital solutions, ensuring that every touchpoint reflected the brand's core values. This included everything from typography and color theory to custom UI components.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-6">Role & Tools</h2>
+                    <ul class="text-sm text-gray-500 space-y-4">
+                        <li>
+                            <span class="block text-black font-medium">Role</span>
+                            Lead Web Designer
+                        </li>
+                        <li>
+                            <span class="block text-black font-medium">Tools</span>
+                            Figma, Adobe Illustrator, CSS Systems
+                        </li>
+                        <li>
+                            <span class="block text-black font-medium">Duration</span>
+                            3 Months
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-20 px-6 bg-[#111111] text-white">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <img src="docs/images/logo.png" alt="Vimal Babu" class="h-6 w-auto brightness-0 invert">
+                <p class="text-sm text-gray-500">© 2026 Vimal Babu Kalappattil</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
