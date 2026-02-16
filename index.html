@@ -47,7 +47,7 @@
                     <p class="text-gray-500 leading-relaxed max-w-2xl mb-8">
                         Creative and results-driven Web Designer with extensive experience in leading high-impact digital and print projects. Specialized in Adobe Creative Suite and Figma-to-production workflows, with a proven track record of delivering 20+ production-ready templates for one.com. Expert in maintaining brand consistency across social media, digital assets, and print collateral, complemented by strong Agile/Scrum leadership and technical stakeholder communication.
                     </p>
-                    <a href="#" class="inline-flex items-center px-6 py-3 bg-black text-white text-sm font-medium rounded-full hover:bg-gray-800 transition-all duration-300 shadow-sm hover:shadow-md">
+                    <a href="#" class="inline-flex items-center px-6 py-3 bg-gray-500 text-white text-sm font-medium rounded-full hover:bg-gray-600 transition-all duration-300 shadow-sm hover:shadow-md">
                         Download Resume
                         <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                     </a>
@@ -59,13 +59,19 @@
             </div>
 
             <!-- Profile/About Card -->
-            <a href="about.html" class="md:col-span-2 bento-card group flex flex-col justify-between hover:bg-[#fafafa]">
-                <div class="h-12 w-12 rounded-full bg-gray-100 flex items-center justify-center group-hover:bg-black transition-colors duration-500">
+            <a href="about.html" class="md:col-span-2 bento-card group flex flex-col justify-between relative overflow-hidden">
+                <!-- Image Background with Overlay -->
+                <div class="absolute inset-0 z-0">
+                    <img src="/portfolio/images/VBK.png" alt="Vimal Babu" class="w-full h-full object-cover grayscale opacity-20 group-hover:opacity-30 transition-opacity duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+                </div>
+                
+                <div class="relative z-10 h-12 w-12 rounded-full bg-gray-100 flex items-center justify-center group-hover:bg-black transition-colors duration-500 shadow-sm">
                     <svg class="w-5 h-5 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                 </div>
-                <div>
-                    <h3 class="text-lg font-medium mb-1">About Me</h3>
-                    <p class="text-sm text-gray-400">Read my story and experience</p>
+                <div class="relative z-10">
+                    <h3 class="text-lg font-medium mb-1 text-black">About Me</h3>
+                    <p class="text-sm text-gray-500">Read my story and experience</p>
                 </div>
             </a>
 
