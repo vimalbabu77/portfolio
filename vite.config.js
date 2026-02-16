@@ -21,6 +21,8 @@ export default defineConfig({
         softsat: resolve(__dirname, 'project-softsat.html'),
         nadia: resolve(__dirname, 'project-nadia.html'),
         flabba: resolve(__dirname, 'project-flabba.html'),
+        highex: resolve(__dirname, 'project-highex.html'),
+        globalttss: resolve(__dirname, 'project-globaltt-ss.html'),
       },
     },
   },

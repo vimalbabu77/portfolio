@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Vimal Babu Kalappattil</title>
-    <link rel="icon" type="image/png" href="/portfolio/images/VBK-LOGO.png">
+    <link rel="icon" type="image/png" href="images/VBK-LOGO.png">
     <link href="/src/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,7 @@
                     colors: {
                         background: '#ffffff',
                         foreground: '#111111',
+                        border: '#eeeeee',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -30,55 +31,166 @@
 
     <header id="global-header"></header>
 
-    <main class="pt-32 pb-32 px-6 max-w-6xl mx-auto">
-        
-        <header class="mb-24">
-            <h1 class="text-5xl font-semibold tracking-tight mb-8">Selected Works.</h1>
-            <p class="text-xl text-gray-500 leading-relaxed max-w-2xl">
-                A collection of projects where design meets technical excellence.
-            </p>
+    <main class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
+        <header class="mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-2 uppercase">
+                Selected <span class="text-gray-400 font-light">Projects</span>
+            </h1>
+            <p class="text-lg text-gray-500 w-full">A collection of digital solutions, UI/UX research, and production-ready designs.</p>
         </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             
-            <!-- Project Card -->
-            <a href="project-ipseos.html" class="group cursor-pointer">
-                <div class="aspect-[16/10] bg-[#f9f9f9] rounded-2xl mb-6 overflow-hidden border border-[#eeeeee] transition-all duration-500 group-hover:border-black/5 group-hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-                    <img src="https://placehold.co/1200x800/fcfcfc/111111/svg?text=IPSEOS" alt="IPSEOS" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <!-- Project Card: IPSEOS -->
+            <a href="project-ipseos.html" class="bento-card group flex flex-col justify-between overflow-hidden hover:bg-[#fafafa] transition-colors">
+                <div>
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <p class="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Branding & Identity</p>
+                            <h2 class="text-2xl font-bold text-black">IPSEOS</h2>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-500">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                    <div class="aspect-video bg-gray-50 rounded-xl overflow-hidden mb-6 border border-gray-100">
+                        <img src="images/ipseos.png" alt="IPSEOS" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">High-impact digital solutions with a focus on brand consistency and modern user interface design systems.</p>
                 </div>
-                <h3 class="text-xl font-medium mb-1">IPSEOS</h3>
-                <p class="text-sm text-gray-400 mb-4">Digital Identity & Design Systems</p>
-                <div class="h-px w-8 bg-black transform origin-left transition-all duration-500 group-hover:w-full"></div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-50">
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Figma</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">UI Design</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Brand Systems</span>
+                </div>
             </a>
 
-            <!-- Project Card -->
-            <a href="project-softsat.html" class="group cursor-pointer">
-                <div class="aspect-[16/10] bg-[#f9f9f9] rounded-2xl mb-6 overflow-hidden border border-[#eeeeee] transition-all duration-500 group-hover:border-black/5 group-hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-                    <img src="https://placehold.co/1200x800/fcfcfc/111111/svg?text=E-SoftSat" alt="E-SoftSat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <!-- Project Card: E-SoftSat -->
+            <a href="project-softsat.html" class="bento-card group flex flex-col justify-between overflow-hidden hover:bg-[#fafafa] transition-colors">
+                <div>
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <p class="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Corporate Ecosystem</p>
+                            <h2 class="text-2xl font-bold text-black">E-SoftSat</h2>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-500">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                    <div class="aspect-video bg-gray-50 rounded-xl overflow-hidden mb-6 border border-gray-100">
+                        <img src="images/esoftsat.png" alt="E-SoftSat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">Specialized technical operations and corporate web development implementation for international stakeholders.</p>
                 </div>
-                <h3 class="text-xl font-medium mb-1">E-SoftSat</h3>
-                <p class="text-sm text-gray-400 mb-4">Corporate Web Ecosystem</p>
-                <div class="h-px w-8 bg-black transform origin-left transition-all duration-500 group-hover:w-full"></div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-50">
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Web Development</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">PHP</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">IT Infrastructure</span>
+                </div>
             </a>
 
-            <!-- Project Card -->
-            <a href="project-nadia.html" class="group cursor-pointer">
-                <div class="aspect-[16/10] bg-[#f9f9f9] rounded-2xl mb-6 overflow-hidden border border-[#eeeeee] transition-all duration-500 group-hover:border-black/5 group-hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
-                    <img src="https://placehold.co/1200x800/fcfcfc/111111/svg?text=Dr.+Nadia" alt="Dr. Nadia Buhannad" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <!-- Project Card: Dr. Nadia -->
+            <a href="project-nadia.html" class="bento-card group flex flex-col justify-between overflow-hidden hover:bg-[#fafafa] transition-colors">
+                <div>
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <p class="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">UI/UX Research</p>
+                            <h2 class="text-2xl font-bold text-black">Dr. Nadia Buhannad</h2>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-500">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                    <div class="aspect-video bg-gray-50 rounded-xl overflow-hidden mb-6 border border-gray-100">
+                        <img src="images/nadia1.png" alt="Dr. Nadia" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">High-end UI/UX specialized project focusing on user-centric design principles and extensive user testing.</p>
                 </div>
-                <h3 class="text-xl font-medium mb-1">Dr. Nadia Buhannad</h3>
-                <p class="text-sm text-gray-400 mb-4">UI/UX & User Research</p>
-                <div class="h-px w-8 bg-black transform origin-left transition-all duration-500 group-hover:w-full"></div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-50">
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">UX Research</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Prototyping</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Figma</span>
+                </div>
             </a>
 
-            <!-- Project Card -->
-            <a href="project-flabba.html" class="group cursor-pointer">
-                <div class="aspect-[16/10] bg-[#f9f9f9] rounded-2xl mb-6 overflow-hidden border border-[#eeeeee] transition-all duration-500 group-hover:border-black/5 group-hover:shadow-[0_8_30px_rgb(0,0,0,0.04)]">
-                    <img src="https://placehold.co/1200x800/fcfcfc/111111/svg?text=Flabba" alt="Flabba" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <!-- Project Card: Flabba -->
+            <a href="project-flabba.html" class="bento-card group flex flex-col justify-between overflow-hidden hover:bg-[#fafafa] transition-colors">
+                <div>
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <p class="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Production Workflow</p>
+                            <h2 class="text-2xl font-bold text-black">Flabba</h2>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-500">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                    <div class="aspect-video bg-gray-50 rounded-xl overflow-hidden mb-6 border border-gray-100">
+                        <img src="images/flabba.png" alt="Flabba" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">Optimized Figma-to-production workflows delivering pixel-perfect implementation of complex design specs.</p>
                 </div>
-                <h3 class="text-xl font-medium mb-1">Flabba</h3>
-                <p class="text-sm text-gray-400 mb-4">Workflow & Production Design</p>
-                <div class="h-px w-8 bg-black transform origin-left transition-all duration-500 group-hover:w-full"></div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-50">
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Frontend Dev</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Tailwind CSS</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">JavaScript</span>
+                </div>
+            </a>
+
+            <!-- Project Card: HighEx Logistics -->
+            <a href="project-highex.html" class="bento-card group flex flex-col justify-between overflow-hidden hover:bg-[#fafafa] transition-colors">
+                <div>
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <p class="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Logistics & Service</p>
+                            <h2 class="text-2xl font-bold text-black">HighEx Logistics</h2>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-500">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                    <div class="aspect-video bg-gray-50 rounded-xl overflow-hidden mb-6 border border-gray-100">
+                        <img src="images/highexlogistics.png" alt="HighEx Logistics" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">Streamlined web platform for logistics management and international service coordination.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-50">
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Service Design</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Web Solutions</span>
+                </div>
+            </a>
+
+            <!-- Project Card: GlobalTT SS -->
+            <a href="project-globaltt-ss.html" class="bento-card group flex flex-col justify-between overflow-hidden hover:bg-[#fafafa] transition-colors">
+                <div>
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <p class="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Satellite Services</p>
+                            <h2 class="text-2xl font-bold text-black">GlobalTT SS</h2>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-500">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                    <div class="aspect-video bg-gray-50 rounded-xl overflow-hidden mb-6 border border-gray-100">
+                        <img src="images/globaltt-ss.png" alt="GlobalTT SS" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">Comprehensive digital platform for satellite communication services and technical support hubs.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-50">
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Enterprise Web</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
+                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Technical Architecture</span>
+                </div>
             </a>
 
         </div>
