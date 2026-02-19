@@ -12,7 +12,7 @@ read -r -p "Enter your choice (1-4): " choice
 
 case "${choice}" in
   1)
-    npm run publish:github
+    bash scripts/publish-github.sh
     ;;
   2)
     npm run publish:cloudflare

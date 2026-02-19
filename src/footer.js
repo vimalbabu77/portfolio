@@ -28,8 +28,15 @@ export function renderFooter() {
             <div class="pt-6 border-t border-gray-50 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="text-xs text-gray-400">© 2026 Vimal Babu Kalappattil. All rights reserved.</p>
                 <div class="flex gap-6">
-                    <a href="mailto:vimalbabu77@gmail.com" class="text-xs font-bold text-gray-400 hover:text-black transition-colors">Email</a>
-                    <a href="https://www.linkedin.com/in/vimalbabu77" target="_blank" class="text-xs font-bold text-gray-400 hover:text-black transition-colors">LinkedIn</a>
+                    <a href="mailto:vimalbabu77@gmail.com" class="text-gray-400 hover:text-black transition-colors" title="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/971566509362" target="_blank" class="text-gray-400 hover:text-[#25D366] transition-colors" title="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vimalbabu77" target="_blank" class="text-gray-400 hover:text-[#0077b5] transition-colors" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
         </div>
