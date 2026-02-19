@@ -25,7 +25,7 @@ export function renderHeader() {
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
             <!-- Logo -->
             <a href="index.html" class="flex items-center shrink-0">
-                <img src="/portfolio/images/logo.png" alt="Vimal Babu" class="h-7 md:h-8 w-auto">
+                <img src="/portfolio/images/logo.png" alt="Vimal Babu" class="h-10 md:h-12 w-auto">
             </a>
 
             <!-- Desktop Navigation -->
