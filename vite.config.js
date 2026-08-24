@@ -23,6 +23,7 @@ export default defineConfig({
         flabba: resolve(__dirname, 'project-flabba.html'),
         highex: resolve(__dirname, 'project-highex.html'),
         globalttss: resolve(__dirname, 'project-globaltt-ss.html'),
+        onecom: resolve(__dirname, 'project-onecom.html'),
       },
     },
   },
