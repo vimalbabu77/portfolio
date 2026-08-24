@@ -35,7 +35,7 @@ const Home = () => {
                     {/* About Card */}
                     <Link to="/about" className="md:col-span-2 bento-card border border-gray-100 rounded-2xl group relative overflow-hidden flex flex-col justify-end p-8">
                         <div className="absolute inset-0 z-0">
-                            <img src="/images/VML.jpg" alt="Vimal Babu" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
+                            <img src={`${import.meta.env.BASE_URL}images/VML.jpg`} alt="Vimal Babu" className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
                             <div className="absolute inset-0 bg-black/20"></div>
                         </div>
                         <div className="relative z-10">

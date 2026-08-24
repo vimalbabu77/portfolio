@@ -4,7 +4,7 @@ const Footer = () => {
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
                 {/* Brand Section */}
                 <div>
-                    <img src="/images/logo.png" alt="Logo" className="h-10 mb-4" />
+                    <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Logo" className="h-10 mb-4" />
                     <p className="text-sm leading-relaxed max-w-sm">
                         Creative Web Designer & UI/UX Specialist with expertise in turning complex concepts into seamless, high-impact digital solutions.
                     </p>
