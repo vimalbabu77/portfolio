@@ -40,8 +40,16 @@
             <p class="text-lg text-gray-500 w-full">A collection of digital solutions, UI/UX research, and production-ready designs.</p>
         </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
+        <!-- Tabs Navigation -->
+        <div class="flex flex-wrap gap-4 mb-12 border-b border-gray-100 pb-4">
+            <button onclick="showTab('websites')" id="btn-websites" class="text-sm font-bold pb-4 border-b-2 border-black">Websites & Templates</button>
+            <button onclick="showTab('animation')" id="btn-animation" class="text-sm font-medium text-gray-400 hover:text-black transition-colors pb-4">Animation & Video Projects</button>
+            <button onclick="showTab('brochure')" id="btn-brochure" class="text-sm font-medium text-gray-400 hover:text-black transition-colors pb-4">Brochure and Flyers</button>
+            <button onclick="showTab('logos')" id="btn-logos" class="text-sm font-medium text-gray-400 hover:text-black transition-colors pb-4">Logos and Graphics</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div id="grid-websites" class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Project Card: One.com Templates -->
             <a href="project-onecom.html" class="bento-card group flex flex-col justify-between overflow-hidden hover:bg-[#fafafa] transition-colors">
                 <div>
@@ -65,33 +73,7 @@
                     <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Web Development</span>
                 </div>
             </a>
-
-            <!-- Project Card: IPSEOS -->
-            <a href="project-ipseos.html" class="bento-card group flex flex-col justify-between overflow-hidden hover:bg-[#fafafa] transition-colors">
-                <div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <p class="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Branding & Identity</p>
-                            <h2 class="text-2xl font-bold text-black">IPSEOS</h2>
-                        </div>
-                        <div class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-500">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </div>
-                    </div>
-                    <div class="aspect-video bg-gray-50 rounded-xl overflow-hidden mb-6 border border-gray-100">
-                        <img src="images/ipseos.png" alt="IPSEOS" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    </div>
-                    <p class="text-sm text-gray-500 leading-relaxed mb-6">High-impact digital solutions with a focus on brand consistency and modern user interface design systems.</p>
-                </div>
-                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-50">
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Figma</span>
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">UI Design</span>
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Brand Systems</span>
-                </div>
-            </a>
-
+            
             <!-- Project Card: E-SoftSat -->
             <a href="project-softsat.html" class="bento-card group flex flex-col justify-between overflow-hidden hover:bg-[#fafafa] transition-colors">
                 <div>
@@ -117,83 +99,7 @@
                     <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">IT Infrastructure</span>
                 </div>
             </a>
-
-            <!-- Project Card: Dr. Nadia -->
-            <a href="project-nadia.html" class="bento-card group flex flex-col justify-between overflow-hidden hover:bg-[#fafafa] transition-colors">
-                <div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <p class="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">UI/UX Research</p>
-                            <h2 class="text-2xl font-bold text-black">Dr. Nadia Buhannad</h2>
-                        </div>
-                        <div class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-500">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </div>
-                    </div>
-                    <div class="aspect-video bg-gray-50 rounded-xl overflow-hidden mb-6 border border-gray-100">
-                        <img src="images/nadia1.png" alt="Dr. Nadia" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    </div>
-                    <p class="text-sm text-gray-500 leading-relaxed mb-6">High-end UI/UX specialized project focusing on user-centric design principles and extensive user testing.</p>
-                </div>
-                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-50">
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">UX Research</span>
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Prototyping</span>
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Figma</span>
-                </div>
-            </a>
-
-            <!-- Project Card: Flabba -->
-            <a href="project-flabba.html" class="bento-card group flex flex-col justify-between overflow-hidden hover:bg-[#fafafa] transition-colors">
-                <div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <p class="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Production Workflow</p>
-                            <h2 class="text-2xl font-bold text-black">Flabba</h2>
-                        </div>
-                        <div class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-500">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </div>
-                    </div>
-                    <div class="aspect-video bg-gray-50 rounded-xl overflow-hidden mb-6 border border-gray-100">
-                        <img src="images/flabba.png" alt="Flabba" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    </div>
-                    <p class="text-sm text-gray-500 leading-relaxed mb-6">Optimized Figma-to-production workflows delivering pixel-perfect implementation of complex design specs.</p>
-                </div>
-                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-50">
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Frontend Dev</span>
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Tailwind CSS</span>
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">JavaScript</span>
-                </div>
-            </a>
-
-            <!-- Project Card: HighEx Logistics -->
-            <a href="project-highex.html" class="bento-card group flex flex-col justify-between overflow-hidden hover:bg-[#fafafa] transition-colors">
-                <div>
-                    <div class="flex justify-between items-start mb-6">
-                        <div>
-                            <p class="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Logistics & Service</p>
-                            <h2 class="text-2xl font-bold text-black">HighEx Logistics</h2>
-                        </div>
-                        <div class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-500">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </div>
-                    </div>
-                    <div class="aspect-video bg-gray-50 rounded-xl overflow-hidden mb-6 border border-gray-100">
-                        <img src="images/highexlogistics.png" alt="HighEx Logistics" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    </div>
-                    <p class="text-sm text-gray-500 leading-relaxed mb-6">Streamlined web platform for logistics management and international service coordination.</p>
-                </div>
-                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-50">
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Service Design</span>
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">•</span>
-                    <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Web Solutions</span>
-                </div>
-            </a>
-
+            
             <!-- Project Card: GlobalTT SS -->
             <a href="project-globaltt-ss.html" class="bento-card group flex flex-col justify-between overflow-hidden hover:bg-[#fafafa] transition-colors">
                 <div>
@@ -217,11 +123,40 @@
                     <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-widest">Technical Architecture</span>
                 </div>
             </a>
-
-            </a>
-
+        </div>
+        
+        <div id="grid-animation" class="grid grid-cols-1 md:grid-cols-2 gap-6 hidden">
+            <!-- Animation Projects here -->
+            <p class="text-gray-500">No projects in this category yet.</p>
+        </div>
+        <div id="grid-brochure" class="grid grid-cols-1 md:grid-cols-2 gap-6 hidden">
+            <!-- Brochure Projects here -->
+            <p class="text-gray-500">No projects in this category yet.</p>
+        </div>
+        <div id="grid-logos" class="grid grid-cols-1 md:grid-cols-2 gap-6 hidden">
+            <!-- Logo Projects here -->
+            <p class="text-gray-500">No projects in this category yet.</p>
         </div>
     </main>
+
+    <!-- Tab Script -->
+    <script>
+        function showTab(tabName) {
+            // Hide all grids
+            document.querySelectorAll('[id^="grid-"]').forEach(el => el.classList.add('hidden'));
+            // Show selected grid
+            document.getElementById('grid-' + tabName).classList.remove('hidden');
+            
+            // Update button styles
+            document.querySelectorAll('button[id^="btn-"]').forEach(el => {
+                el.classList.remove('text-black', 'border-b-2', 'border-black');
+                el.classList.add('text-gray-400');
+            });
+            document.getElementById('btn-' + tabName).classList.add('text-black', 'border-b-2', 'border-black');
+            document.getElementById('btn-' + tabName).classList.remove('text-gray-400');
+        }
+    </script>
+
 
     <footer id="global-footer"></footer>
 
