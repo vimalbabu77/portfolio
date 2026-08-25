@@ -14,7 +14,7 @@ import ProjectGlobalTT from './pages/portfolio/ProjectGlobalTT';
 
 const App = () => {
     return (
-        <Router>
+        <Router basename="/portfolio/">
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/portfolio" element={<Portfolio />} />
