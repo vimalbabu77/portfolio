@@ -68,6 +68,10 @@ const Contact = () => {
                                 <input type="email" id="email" name="email" className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-black transition-colors" required />
                             </div>
                             <div>
+                                <label htmlFor="phone" className="block text-xs font-semibold text-gray-500 uppercase tracking-widest mb-1">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-black transition-colors" required />
+                            </div>
+                            <div>
                                 <label htmlFor="message" className="block text-xs font-semibold text-gray-500 uppercase tracking-widest mb-1">Message</label>
                                 <textarea id="message" name="message" rows="4" className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-black transition-colors" required></textarea>
                             </div>
