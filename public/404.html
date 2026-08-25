@@ -4,16 +4,10 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>
-      // Properly redirect to SPA base, keeping the full path in query param
-      var l = window.location;
-      var newPath = l.pathname.substring(l.pathname.lastIndexOf('/') + 1);
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        '/portfolio/' +
-        '?p=' + l.pathname.replace(/^\/portfolio/, '') +
-        l.search +
-        l.hash
-      );
+      // Store the requested path so the SPA can redirect to it once loaded.
+      sessionStorage.redirect = window.location.href;
+      // Redirect to the index page.
+      window.location.replace('/portfolio/');
     </script>
   </head>
   <body></body>
