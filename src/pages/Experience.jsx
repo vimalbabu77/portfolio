@@ -7,7 +7,7 @@ const Experience = () => {
             company: 'one.com',
             role: 'Web Developer & Internal IT Administrator',
             period: 'Sep 2023 - Present',
-            logo: '/images/onecom_logo.jpg',
+            logo: `${import.meta.env.BASE_URL}images/onecom_logo.jpg`,
             description: 'one.com is a global web hosting and online solutions provider founded in Denmark in 2002, the company is part of the group.one network and serves over one million customers worldwide. The Dubai office supports its worldwide operations, offering services such as domain registration, cloud hosting, website builders, professional email, and WordPress hosting for individuals and businesses.',
             responsibilities: [
                 'Dynamic AI Website Template Developer with One.com’s core Website Builder team; delivered 20+ production website templates.',
@@ -24,7 +24,7 @@ const Experience = () => {
             company: 'GlobalTT (E‑SoftSat)',
             role: 'UI/UX Developer & Web Developer',
             period: 'Jan 2019 - Aug 2023',
-            logo: '/images/GTT.png',
+            logo: `${import.meta.env.BASE_URL}images/GTT.png`,
             description: 'GLOBALTT is an independent satellite telecom operator providing global VSAT, satellite internet, telephony, IoT, and secure connectivity solutions. The company delivers reliable GEO and LEO satellite communications, supporting enterprises, governments, NGOs, and critical operations worldwide. Esoftsat is the IT operations and support division of GLOBALTT, focusing on infrastructure management, technical support, and system maintenance to ensure secure and continuous connectivity services for business operations.',
             responsibilities: [
                 'Designed and developed responsive corporate and product websites.',
@@ -40,7 +40,7 @@ const Experience = () => {
             company: 'Awawdeh Auto Spare Parts',
             role: 'Web Developer',
             period: 'Apr 2018 - Jan 2019',
-            logo: '/images/awawdeh.jpg',
+            logo: `${import.meta.env.BASE_URL}images/awawdeh.jpg`,
             description: 'Awawdeh Auto Spare Parts is a leading automotive spare parts supplier established in 1996, specializing in new, used, and aftermarket Mercedes-Benz and BMW parts. The company serves customers across the GCC and MENA regions with a wide range of quality-graded parts, competitive pricing, and worldwide delivery through its retail and online store.',
             responsibilities: [
                 'Developed and maintained WordPress-based business websites.',
@@ -52,7 +52,7 @@ const Experience = () => {
             company: 'Bharati Information Technologies',
             role: 'UI Developer',
             period: 'Oct 2016 - Dec 2017',
-            logo: '/images/BIT.jpg',
+            logo: `${import.meta.env.BASE_URL}images/BIT.jpg`,
             description: 'Bharathi Information Technologies is a web and mobile application development company founded in 2011, providing services such as web design, custom web applications, mobile app development, UI/UX design, e-commerce solutions, and .NET development for global clients. 2 years back they changed thier company name to Techmaven IT Solutions Pvt. Ltd.',
             responsibilities: [
                 'Developed UI components and responsive web pages.',
@@ -63,7 +63,7 @@ const Experience = () => {
             company: 'PK DAS Institute of Medical Science',
             role: 'System Analyst',
             period: 'Aug 2015 - Oct 2016',
-            logo: '/images/PKDIMS.jpg',
+            logo: `${import.meta.env.BASE_URL}images/PKDIMS.jpg`,
             description: 'PK DAS Institute of Medical Sciences (PKDIMS) is a super-specialty medical college and hospital in Ottapalam, Kerala, offering MBBS and postgraduate medical education along with advanced patient care. With a large multi-specialty hospital and modern campus facilities, the institution focuses on medical education, research, and high-quality healthcare services.',
             responsibilities: [
                 'Managed institutional website and digital platforms.',
