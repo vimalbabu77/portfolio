@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>
-      // Simplified redirect for SPA on GitHub Pages
-      // Maintains the path, redirecting to the index page for React Router to handle
+      // Properly redirect to SPA base, keeping the full path in query param
       var l = window.location;
+      var newPath = l.pathname.substring(l.pathname.lastIndexOf('/') + 1);
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
         '/portfolio/' +
-        '?p=' + l.pathname.replace(/\/portfolio\//, '') +
+        '?p=' + l.pathname.replace(/^\/portfolio/, '') +
         l.search +
         l.hash
       );
