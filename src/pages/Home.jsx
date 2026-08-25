@@ -50,15 +50,15 @@ const Home = () => {
                         <div className="flex flex-wrap gap-4 mb-8">
                             {[
                                 { name: 'HTML5', icon: 'https://cdn.simpleicons.org/html5/000' },
-                                { name: 'CSS3', icon: '/images/css3.png' },
+                                { name: 'CSS3', icon: `${import.meta.env.BASE_URL}images/css3.png` },
                                 { name: 'JavaScript', icon: 'https://cdn.simpleicons.org/javascript/000' },
                                 { name: 'PHP', icon: 'https://cdn.simpleicons.org/php/000' },
                                 { name: 'Figma', icon: 'https://cdn.simpleicons.org/figma/000' },
                                 { name: 'React', icon: 'https://cdn.simpleicons.org/react/000' },
-                                { name: 'Photoshop', icon: '/images/adobe-photoshop.png' },
-                                { name: 'Illustrator', icon: '/images/adobe-illustrator.png' },
-                                { name: 'After Effects', icon: '/images/after-effects.png' },
-                                { name: 'XD', icon: '/images/xd.png' },
+                                { name: 'Photoshop', icon: `${import.meta.env.BASE_URL}images/adobe-photoshop.png` },
+                                { name: 'Illustrator', icon: `${import.meta.env.BASE_URL}images/adobe-illustrator.png` },
+                                { name: 'After Effects', icon: `${import.meta.env.BASE_URL}images/after-effects.png` },
+                                { name: 'XD', icon: `${import.meta.env.BASE_URL}images/xd.png` },
                                 { name: 'Git', icon: 'https://cdn.simpleicons.org/git/000' },
                                 { name: 'WordPress', icon: 'https://cdn.simpleicons.org/wordpress/000' }
                             ].map(skill => (
