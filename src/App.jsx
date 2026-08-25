@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Portfolio from './pages/Portfolio';
 import Home from './pages/Home';
 import Skills from './pages/Skills';
@@ -14,7 +14,7 @@ import ProjectGlobalTT from './pages/portfolio/ProjectGlobalTT';
 
 const App = () => {
     return (
-        <Router basename="/portfolio/">
+        <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/portfolio" element={<Portfolio />} />
