@@ -143,7 +143,7 @@ const Home = () => {
                     </div>
 
                     {/* Project CTA Section */}
-                    <a href="/portfolio" className="md:col-span-6 bento-card p-8 border border-gray-100 rounded-2xl flex items-center justify-between group hover:bg-black transition-all duration-500">
+                    <Link to="/portfolio" className="md:col-span-6 bento-card p-8 border border-gray-100 rounded-2xl flex items-center justify-between group hover:bg-black transition-all duration-500">
                         <div className="flex items-center gap-8">
                             <h2 className="text-3xl font-medium group-hover:text-white transition-colors">View Portfolio</h2>
                             <div className="hidden md:flex gap-2">
@@ -154,7 +154,7 @@ const Home = () => {
                             </div>
                         </div>
                         <svg className="w-8 h-8 group-hover:text-white transform group-hover:translate-x-2 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                    </a>
+                    </Link>
                 </div>
             </main>
             <Footer />
