@@ -21,10 +21,18 @@ const projects = {
         { title: 'Satellite on the Move for Drones', img: `${import.meta.env.BASE_URL}Video/SOTM.webp`, desc: 'Advanced satellite solutions for drones.', video: `${import.meta.env.BASE_URL}Video/SATELLITE%20ON%20THE%20MOVE%20FOR%20DRONES.mp4` },
     ],
     brochure: [
-        { title: 'GlobalTT Profile Flyer', img: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/A4%20Brochure%20Mockup%20-%208.4%20Version.png`, file: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/A3-A4%20bifold%20Flayer%20GLOBALTT%20Profile%20ENG-min.pdf` },
-        { title: 'GLOBALTT General Brochure', img: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/A4%20Brochure%20Mockup%20-%208.4%20Version.png`, file: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/GLOBALTT%20GENERAL%20BROCHURE%20VER%208.6%20JAN%202023%20(26-01-2023).pdf` },
-        { title: 'Maritime Brochure', img: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/A4%20Brochure%20Mockup%20-%208.4%20Version.png`, file: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/MARITIME%20BROCHURE%20TRIFOLD%20A4.pdf` },
-        { title: 'WiFi Hotspot Brochure', img: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/A4%20Brochure%20Mockup%20-%208.4%20Version.png`, file: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/WIFI%20HOTSPOT%20BROCHURE%20A4%20TRIPIC%20GLOBALTT.pdf` },
+        { title: 'GlobalTT Profile Flyer', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_-_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/A3-A4_bifold_Flayer_GLOBALTT_Profile_ENG-min.pdf` },
+        { title: 'GLOBALTT General Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_-_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/GLOBALTT_GENERAL_BROCHURE_VER_8.6_JAN_2023_(26-01-2023).pdf` },
+        { title: 'Maritime Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_-_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/MARITIME_BROCHURE_TRIFOLD_A4.pdf` },
+        { title: 'WiFi Hotspot Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_-_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/WIFI_HOTSPOT_BROCHURE_A4_TRIPIC_GLOBALTT.pdf` },
+        { title: 'Kymeta Terminal Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_-_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/Kymeta_brochure_U8_Terminal.pdf` },
+        { title: 'IP-Satcube Version 1', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_-_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/IP-SATCUBE_1IPSEOS_VERSION_1.pdf` },
+        { title: 'Virtual Manager ERP', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_-_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/VIRTUAL_MANAGER_ERP_MODL-3.pdf` },
+        { title: 'Hirec 100 Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_-_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/HIREC_100_WATER_REPELLENT_A4_TRIPIC_BROCHURE_GLOBALTT.pdf` },
+        { title: 'Tracker Stick Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_-_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/Brochure_Tracker_Stick_A4_GLOBALTT_&_IPSEOS.pdf` },
+        { title: 'GlobalTT Orion IP Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_-_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/GLOBALTT_Brochure_Orion_IP_A4.pdf` },
+        { title: 'GlobalTT Orion Edge 2 Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_-_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/GLOBALTT_Broshure_Orion_Edge_2_A4.pdf` },
+        { title: 'Night Booster', img: `${import.meta.env.BASE_URL}brochures-flyers/night_booster.jpg`, file: `${import.meta.env.BASE_URL}brochures-flyers/night_booster.jpg` },
     ],
     logos: []
 };
