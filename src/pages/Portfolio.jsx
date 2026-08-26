@@ -14,7 +14,11 @@ const projects = {
         { title: 'GlobalTT SS', img: `${import.meta.env.BASE_URL}images/globaltt-ss.webp`, desc: 'Comprehensive digital platform...', tags: ['Enterprise Web', 'Technical Architecture'], link: '/portfolio/globaltt' },
     ],
     animation: [
-        { title: 'Motion Graphics: Satellite and Drones', img: `${import.meta.env.BASE_URL}Video/SOTM.png`, desc: 'Showcase of advanced satellite...', video: `${import.meta.env.BASE_URL}Video/SATELLITE ON THE MOVE FOR DRONES.mp4` },
+        { title: 'GlobalTT Intro', img: `${import.meta.env.BASE_URL}Video/GTT.webp`, desc: 'Introduction to GlobalTT satellite services.', video: `${import.meta.env.BASE_URL}Video/GLOBALTT INTRO.mp4` },
+        { title: 'Who we are - Satellite differences', img: `${import.meta.env.BASE_URL}Video/GTT2.webp`, desc: 'Understanding satellite technologies.', video: `${import.meta.env.BASE_URL}Video/Who We Are - Satellite Differences.mp4` },
+        { title: 'How Teleports Work', img: `${import.meta.env.BASE_URL}Video/HIW.webp`, desc: 'A look at how teleports function.', video: `${import.meta.env.BASE_URL}Video/How Teleports WOrks.mp4` },
+        { title: 'GlobalTT MWC Short Video', img: `${import.meta.env.BASE_URL}Video/MWC.png`, desc: 'Highlight from MWC event.', video: `${import.meta.env.BASE_URL}Video/Globaltt Mwc Short Video Ver-4 Min.mp4` },
+        { title: 'Satellite on the Move for Drones', img: `${import.meta.env.BASE_URL}Video/SOTM.webp`, desc: 'Advanced satellite solutions for drones.', video: `${import.meta.env.BASE_URL}Video/SATELLITE ON THE MOVE FOR DRONES.mp4` },
     ],
     brochure: [],
     logos: []
