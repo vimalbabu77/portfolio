@@ -38,14 +38,14 @@ const projects = {
         logos: [
             { title: 'Awawdeh Auto', img: `${import.meta.env.BASE_URL}Graphics/logo/awawdeh-auto-spare-parts.png` },
             { title: 'E-SoftSat', img: `${import.meta.env.BASE_URL}Graphics/logo/esoftsat-01.png` },
-            { title: 'GlobalTT SS', img: `${import.meta.env.BASE_URL}Graphics/logo/GLOBALTT%20SS%20LOGO%20ART_new%20logo%201.jpg` },
+            { title: 'GlobalTT SS', img: `${import.meta.env.BASE_URL}Graphics/logo/GLOBALTT_SS_LOGO_ART_new_logo_1.jpg` },
             { title: 'GlobalTT', img: `${import.meta.env.BASE_URL}Graphics/logo/GLOBALTT.png` },
-            { title: 'IPSEOS', img: `${import.meta.env.BASE_URL}Graphics/logo/ipseos%20new%20selected%20logo%2026-11-2020-01.png` },
+            { title: 'IPSEOS', img: `${import.meta.env.BASE_URL}Graphics/logo/ipseos_new_selected_logo_26-11-2020-01.png` },
         ],
         graphics: [
-            { title: 'Clouding Banner', img: `${import.meta.env.BASE_URL}Graphics/Graphics/CLOUDING%20BANNER%20NEW-01-01.png` },
-            { title: 'GlobalTT Coverage', img: `${import.meta.env.BASE_URL}Graphics/Graphics/FULL%20GLOBE%20COVERAGE%20PRINT%20CMYK%20VERSION-01.png` },
-            { title: 'Wifi Diagram', img: `${import.meta.env.BASE_URL}Graphics/Graphics/Point%20to%20Point%20Wifi%20Connection%20Diagram%202-01.png` },
+            { title: 'Clouding Banner', img: `${import.meta.env.BASE_URL}Graphics/Graphics/CLOUDING_BANNER_NEW-01-01.png` },
+            { title: 'GlobalTT Coverage', img: `${import.meta.env.BASE_URL}Graphics/Graphics/FULL_GLOBE_COVERAGE_PRINT_CMYK_VERSION-01.png` },
+            { title: 'Wifi Diagram', img: `${import.meta.env.BASE_URL}Graphics/Graphics/Point_to_Point_Wifi_Connection_Diagram_2-01.png` },
         ]
     }
 };
