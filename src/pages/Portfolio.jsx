@@ -65,9 +65,13 @@ const Portfolio = () => {
         if (activeTab === 'logos') {
             return (
                 <>
-                    <h3 className="text-2xl font-bold mb-6 text-black w-full">Logos</h3>
+                    <div className="col-span-full mt-6">
+                        <h3 className="text-2xl font-bold text-black">Logos</h3>
+                    </div>
                     {projects.logos.logos.map((project, idx) => renderCard(project, idx))}
-                    <h3 className="text-2xl font-bold mb-6 mt-12 text-black w-full">Graphics</h3>
+                    <div className="col-span-full mt-12">
+                        <h3 className="text-2xl font-bold text-black">Graphics</h3>
+                    </div>
                     {projects.logos.graphics.map((project, idx) => renderCard(project, idx))}
                 </>
             );
