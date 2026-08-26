@@ -156,11 +156,11 @@ const Portfolio = () => {
             <Footer />
 
             {modalContent && (
-                <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
-                    <button onClick={() => setModalContent(null)} className="absolute top-4 right-4 text-white text-3xl">&times;</button>
+                <div className="fixed inset-0 bg-white z-50 flex items-center justify-center p-4">
+                    <button onClick={() => setModalContent(null)} className="absolute top-4 right-4 text-black text-3xl">&times;</button>
                     {modalContent.type === 'video' && <video src={modalContent.src} controls className="max-w-4xl w-full rounded-xl" autoPlay />}
-                    {modalContent.type === 'file' && <iframe src={modalContent.src} className="max-w-4xl w-full h-[80vh] rounded-xl" />}
-                    {modalContent.type === 'image' && <img src={modalContent.src} className="max-w-4xl w-full rounded-xl" />}
+                    {modalContent.type === 'file' && <iframe src={modalContent.src} className="max-w-4xl w-full h-[80vh] rounded-xl border border-gray-100" />}
+                    {modalContent.type === 'image' && <img src={modalContent.src} className="max-w-4xl w-full rounded-xl border border-gray-100" />}
                 </div>
             )}
         </div>
