@@ -14,7 +14,7 @@ const projects = {
         { title: 'GlobalTT SS', img: `${import.meta.env.BASE_URL}images/globaltt-ss.png`, desc: 'Comprehensive digital platform...', tags: ['Enterprise Web', 'Technical Architecture'], link: '/portfolio/globaltt' },
     ],
     animation: [
-        { title: 'Motion Graphics: Satellite and Drones', img: `${import.meta.env.BASE_URL}docs/Video/SOTM.png`, desc: 'Showcase of advanced satellite...', video: `${import.meta.env.BASE_URL}docs/Video/SATELLITE ON THE MOVE FOR DRONES.mp4` },
+        { title: 'Motion Graphics: Satellite and Drones', img: `${import.meta.env.BASE_URL}Video/SOTM.png`, desc: 'Showcase of advanced satellite...', video: `${import.meta.env.BASE_URL}Video/SATELLITE ON THE MOVE FOR DRONES.mp4` },
     ],
     brochure: [],
     logos: []
