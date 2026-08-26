@@ -34,7 +34,20 @@ const projects = {
         { title: 'GlobalTT Orion Edge 2 Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_-_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/GLOBALTT_Broshure_Orion_Edge_2_A4.pdf` },
         { title: 'Night Booster', img: `${import.meta.env.BASE_URL}brochures-flyers/night_booster.jpg`, file: `${import.meta.env.BASE_URL}brochures-flyers/night_booster.jpg` },
     ],
-    logos: []
+    logos: {
+        logos: [
+            { title: 'Awawdeh Auto', img: `${import.meta.env.BASE_URL}Graphics/logo/awawdeh-auto-spare-parts.png` },
+            { title: 'E-SoftSat', img: `${import.meta.env.BASE_URL}Graphics/logo/esoftsat-01.png` },
+            { title: 'GlobalTT SS', img: `${import.meta.env.BASE_URL}Graphics/logo/GLOBALTT%20SS%20LOGO%20ART_new%20logo%201.jpg` },
+            { title: 'GlobalTT', img: `${import.meta.env.BASE_URL}Graphics/logo/GLOBALTT.png` },
+            { title: 'IPSEOS', img: `${import.meta.env.BASE_URL}Graphics/logo/ipseos%20new%20selected%20logo%2026-11-2020-01.png` },
+        ],
+        graphics: [
+            { title: 'Clouding Banner', img: `${import.meta.env.BASE_URL}Graphics/Graphics/CLOUDING%20BANNER%20NEW-01-01.png` },
+            { title: 'GlobalTT Coverage', img: `${import.meta.env.BASE_URL}Graphics/Graphics/FULL%20GLOBE%20COVERAGE%20PRINT%20CMYK%20VERSION-01.png` },
+            { title: 'Wifi Diagram', img: `${import.meta.env.BASE_URL}Graphics/Graphics/Point%20to%20Point%20Wifi%20Connection%20Diagram%202-01.png` },
+        ]
+    }
 };
 
 const Portfolio = () => {
@@ -47,6 +60,51 @@ const Portfolio = () => {
         { id: 'brochure', name: 'Brochure and Flyers' },
         { id: 'logos', name: 'Logos and Graphics' },
     ];
+
+    const renderProjects = () => {
+        if (activeTab === 'logos') {
+            return (
+                <>
+                    <h3 className="text-2xl font-bold mb-6 text-black w-full">Logos</h3>
+                    {projects.logos.logos.map((project, idx) => renderCard(project, idx))}
+                    <h3 className="text-2xl font-bold mb-6 mt-12 text-black w-full">Graphics</h3>
+                    {projects.logos.graphics.map((project, idx) => renderCard(project, idx))}
+                </>
+            );
+        }
+        return projects[activeTab].map((project, idx) => renderCard(project, idx));
+    };
+
+    const renderCard = (project, idx) => {
+        const CardContent = (
+            <>
+                <div className="aspect-video bg-black rounded-xl overflow-hidden mb-6 relative cursor-pointer" onClick={(e) => { 
+                    if (project.video) { e.preventDefault(); setModalContent({ type: 'video', src: project.video }); }
+                    else if (project.file) { e.preventDefault(); setModalContent({ type: 'file', src: project.file }); }
+                    else { e.preventDefault(); setModalContent({ type: 'image', src: project.img }); }
+                }}>
+                    <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:opacity-80 transition-opacity" />
+                    {(project.video || project.file || !project.link) && (
+                        <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all">
+                            <i className={`fa-solid ${project.video ? 'fa-play' : 'fa-expand'} text-white text-4xl`}></i>
+                        </div>
+                    )}
+                </div>
+                <h2 className="text-xl font-bold text-black mb-2">{project.title}</h2>
+                {project.desc && <p className="text-sm text-gray-500 leading-relaxed">{project.desc}</p>}
+            </>
+        );
+
+        return project.link ? (
+            <Link key={idx} to={project.link} className="bento-card p-8 border border-gray-100 rounded-2xl group flex flex-col justify-between overflow-hidden">
+                {CardContent}
+            </Link>
+        ) : (
+            <div key={idx} className="bento-card p-8 border border-gray-100 rounded-2xl group flex flex-col justify-between overflow-hidden">
+                {CardContent}
+            </div>
+        );
+    };
 
     return (
         <div className="bg-white text-[#111]">
@@ -65,36 +123,7 @@ const Portfolio = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {projects[activeTab].map((project, idx) => {
-                        const CardContent = (
-                            <>
-                                <div className="aspect-video bg-black rounded-xl overflow-hidden mb-6 relative cursor-pointer" onClick={(e) => { 
-                                    if (project.video) { e.preventDefault(); setModalContent({ type: 'video', src: project.video }); }
-                                    else if (project.file) { e.preventDefault(); setModalContent({ type: 'file', src: project.file }); }
-                                }}>
-                                    <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:opacity-80 transition-opacity" />
-                                    {(project.video || project.file) && (
-                                        <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all">
-                                            <i className={`fa-solid ${project.video ? 'fa-play' : 'fa-expand'} text-white text-4xl`}></i>
-                                        </div>
-                                    )}
-                                </div>
-                                <h2 className="text-xl font-bold text-black mb-2">{project.title}</h2>
-                                <p className="text-sm text-gray-500 leading-relaxed">{project.desc}</p>
-                            </>
-                        );
-
-                        return project.link ? (
-                            <Link key={idx} to={project.link} className="bento-card p-8 border border-gray-100 rounded-2xl group flex flex-col justify-between overflow-hidden">
-                                {CardContent}
-                            </Link>
-                        ) : (
-                            <div key={idx} className="bento-card p-8 border border-gray-100 rounded-2xl group flex flex-col justify-between overflow-hidden">
-                                {CardContent}
-                            </div>
-                        );
-                    })}
-                    {projects[activeTab].length === 0 && <p className="text-gray-500">No projects in this category.</p>}
+                    {renderProjects()}
                 </div>
             </main>
             <Footer />
@@ -104,6 +133,7 @@ const Portfolio = () => {
                     <button onClick={() => setModalContent(null)} className="absolute top-4 right-4 text-white text-3xl">&times;</button>
                     {modalContent.type === 'video' && <video src={modalContent.src} controls className="max-w-4xl w-full rounded-xl" autoPlay />}
                     {modalContent.type === 'file' && <iframe src={modalContent.src} className="max-w-4xl w-full h-[80vh] rounded-xl" />}
+                    {modalContent.type === 'image' && <img src={modalContent.src} className="max-w-4xl w-full rounded-xl" />}
                 </div>
             )}
         </div>
