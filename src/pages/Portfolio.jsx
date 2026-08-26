@@ -5,13 +5,13 @@ import Footer from '../components/Footer';
 
 const projects = {
     websites: [
-        { title: 'One.com Templates', img: `${import.meta.env.BASE_URL}images/onecom-templates.png`, desc: 'Responsive website templates...', tags: ['UI Design', 'Web Development'], link: '/portfolio/onecom' },
-        { title: 'IPSEOS', img: `${import.meta.env.BASE_URL}images/ipseos.png`, desc: 'High-impact digital solutions...', tags: ['Figma', 'UI Design'], link: '/portfolio/ipseos' },
-        { title: 'E-SoftSat', img: `${import.meta.env.BASE_URL}images/esoftsat.png`, desc: 'Specialized technical operations...', tags: ['Web Development', 'PHP'], link: '/portfolio/softsat' },
-        { title: 'Dr. Nadia Buhannad', img: `${import.meta.env.BASE_URL}images/nadia1.png`, desc: 'High-end UI/UX specialized...', tags: ['UX Research', 'Figma'], link: '/portfolio/nadia' },
-        { title: 'Flabba', img: `${import.meta.env.BASE_URL}images/flabba.png`, desc: 'Optimized Figma-to-production...', tags: ['Frontend Dev', 'Tailwind CSS'], link: '/portfolio/flabba' },
-        { title: 'HighEx Logistics', img: `${import.meta.env.BASE_URL}images/highexlogistics.png`, desc: 'Streamlined web platform...', tags: ['Service Design', 'Web Solutions'], link: '/portfolio/highex' },
-        { title: 'GlobalTT SS', img: `${import.meta.env.BASE_URL}images/globaltt-ss.png`, desc: 'Comprehensive digital platform...', tags: ['Enterprise Web', 'Technical Architecture'], link: '/portfolio/globaltt' },
+        { title: 'One.com Templates', img: `${import.meta.env.BASE_URL}images/onecom-templates.webp`, desc: 'Responsive website templates...', tags: ['UI Design', 'Web Development'], link: '/portfolio/onecom' },
+        { title: 'IPSEOS', img: `${import.meta.env.BASE_URL}images/ipseos.webp`, desc: 'High-impact digital solutions...', tags: ['Figma', 'UI Design'], link: '/portfolio/ipseos' },
+        { title: 'E-SoftSat', img: `${import.meta.env.BASE_URL}images/esoftsat.webp`, desc: 'Specialized technical operations...', tags: ['Web Development', 'PHP'], link: '/portfolio/softsat' },
+        { title: 'Dr. Nadia Buhannad', img: `${import.meta.env.BASE_URL}images/nadia1.webp`, desc: 'High-end UI/UX specialized...', tags: ['UX Research', 'Figma'], link: '/portfolio/nadia' },
+        { title: 'Flabba', img: `${import.meta.env.BASE_URL}images/flabba.webp`, desc: 'Optimized Figma-to-production...', tags: ['Frontend Dev', 'Tailwind CSS'], link: '/portfolio/flabba' },
+        { title: 'HighEx Logistics', img: `${import.meta.env.BASE_URL}images/highexlogistics.webp`, desc: 'Streamlined web platform...', tags: ['Service Design', 'Web Solutions'], link: '/portfolio/highex' },
+        { title: 'GlobalTT SS', img: `${import.meta.env.BASE_URL}images/globaltt-ss.webp`, desc: 'Comprehensive digital platform...', tags: ['Enterprise Web', 'Technical Architecture'], link: '/portfolio/globaltt' },
     ],
     animation: [
         { title: 'Motion Graphics: Satellite and Drones', img: `${import.meta.env.BASE_URL}Video/SOTM.png`, desc: 'Showcase of advanced satellite...', video: `${import.meta.env.BASE_URL}Video/SATELLITE ON THE MOVE FOR DRONES.mp4` },

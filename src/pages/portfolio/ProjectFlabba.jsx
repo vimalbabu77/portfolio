@@ -17,7 +17,7 @@ const ProjectFlabba = () => {
 
                 <section className="mb-16">
                     <div className="aspect-[16/9] bg-[#f9f9f9] rounded-3xl overflow-hidden border border-[#eeeeee] mb-16">
-                        <img src={`${import.meta.env.BASE_URL}images/flabba.png`} alt="Flabba Design System" className="w-full h-full object-cover" />
+                        <img src={`${import.meta.env.BASE_URL}images/flabba.webp`} alt="Flabba Design System" className="w-full h-full object-cover" />
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
