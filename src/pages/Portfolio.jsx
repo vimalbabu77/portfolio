@@ -20,13 +20,18 @@ const projects = {
         { title: 'GlobalTT MWC Short Video', img: `${import.meta.env.BASE_URL}Video/MWC.png`, desc: 'Highlight from MWC event.', video: `${import.meta.env.BASE_URL}Video/Globaltt%20Mwc%20Short%20Video%20Ver-4%20Min.mp4` },
         { title: 'Satellite on the Move for Drones', img: `${import.meta.env.BASE_URL}Video/SOTM.webp`, desc: 'Advanced satellite solutions for drones.', video: `${import.meta.env.BASE_URL}Video/SATELLITE%20ON%20THE%20MOVE%20FOR%20DRONES.mp4` },
     ],
-    brochure: [],
+    brochure: [
+        { title: 'GlobalTT Profile Flyer', img: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/A4%20Brochure%20Mockup%20-%208.4%20Version.png`, file: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/A3-A4%20bifold%20Flayer%20GLOBALTT%20Profile%20ENG-min.pdf` },
+        { title: 'GLOBALTT General Brochure', img: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/A4%20Brochure%20Mockup%20-%208.4%20Version.png`, file: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/GLOBALTT%20GENERAL%20BROCHURE%20VER%208.6%20JAN%202023%20(26-01-2023).pdf` },
+        { title: 'Maritime Brochure', img: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/A4%20Brochure%20Mockup%20-%208.4%20Version.png`, file: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/MARITIME%20BROCHURE%20TRIFOLD%20A4.pdf` },
+        { title: 'WiFi Hotspot Brochure', img: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/A4%20Brochure%20Mockup%20-%208.4%20Version.png`, file: `${import.meta.env.BASE_URL}Brochure%20and%20Flayer/WIFI%20HOTSPOT%20BROCHURE%20A4%20TRIPIC%20GLOBALTT.pdf` },
+    ],
     logos: []
 };
 
 const Portfolio = () => {
     const [activeTab, setActiveTab] = useState('websites');
-    const [videoSrc, setVideoSrc] = useState(null);
+    const [modalContent, setModalContent] = useState(null);
 
     const tabs = [
         { id: 'websites', name: 'Websites & Templates' },
@@ -55,11 +60,14 @@ const Portfolio = () => {
                     {projects[activeTab].map((project, idx) => {
                         const CardContent = (
                             <>
-                                <div className="aspect-video bg-black rounded-xl overflow-hidden mb-6 relative cursor-pointer" onClick={(e) => { if (project.video) { e.preventDefault(); setVideoSrc(project.video); } }}>
+                                <div className="aspect-video bg-black rounded-xl overflow-hidden mb-6 relative cursor-pointer" onClick={(e) => { 
+                                    if (project.video) { e.preventDefault(); setModalContent({ type: 'video', src: project.video }); }
+                                    else if (project.file) { e.preventDefault(); setModalContent({ type: 'file', src: project.file }); }
+                                }}>
                                     <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:opacity-80 transition-opacity" />
-                                    {project.video && (
+                                    {(project.video || project.file) && (
                                         <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all">
-                                            <i className="fa-solid fa-play text-white text-4xl"></i>
+                                            <i className={`fa-solid ${project.video ? 'fa-play' : 'fa-expand'} text-white text-4xl`}></i>
                                         </div>
                                     )}
                                 </div>
@@ -83,10 +91,11 @@ const Portfolio = () => {
             </main>
             <Footer />
 
-            {videoSrc && (
+            {modalContent && (
                 <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
-                    <button onClick={() => setVideoSrc(null)} className="absolute top-4 right-4 text-white text-3xl">&times;</button>
-                    <video src={videoSrc} controls className="max-w-4xl w-full rounded-xl" autoPlay />
+                    <button onClick={() => setModalContent(null)} className="absolute top-4 right-4 text-white text-3xl">&times;</button>
+                    {modalContent.type === 'video' && <video src={modalContent.src} controls className="max-w-4xl w-full rounded-xl" autoPlay />}
+                    {modalContent.type === 'file' && <iframe src={modalContent.src} className="max-w-4xl w-full h-[80vh] rounded-xl" />}
                 </div>
             )}
         </div>
