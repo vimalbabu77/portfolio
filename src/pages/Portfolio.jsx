@@ -14,11 +14,11 @@ const projects = {
         { title: 'GlobalTT SS', img: `${import.meta.env.BASE_URL}images/globaltt-ss.webp`, desc: 'Comprehensive digital platform...', tags: ['Enterprise Web', 'Technical Architecture'], link: '/portfolio/globaltt' },
     ],
     animation: [
-        { title: 'GlobalTT Intro', img: `${import.meta.env.BASE_URL}Video/GTT.webp`, desc: 'Introduction to GlobalTT satellite services.', video: `${import.meta.env.BASE_URL}Video/GLOBALTT INTRO.mp4` },
-        { title: 'Who we are - Satellite differences', img: `${import.meta.env.BASE_URL}Video/GTT2.webp`, desc: 'Understanding satellite technologies.', video: `${import.meta.env.BASE_URL}Video/Who We Are - Satellite Differences.mp4` },
-        { title: 'How Teleports Work', img: `${import.meta.env.BASE_URL}Video/HIW.webp`, desc: 'A look at how teleports function.', video: `${import.meta.env.BASE_URL}Video/How Teleports WOrks.mp4` },
-        { title: 'GlobalTT MWC Short Video', img: `${import.meta.env.BASE_URL}Video/MWC.png`, desc: 'Highlight from MWC event.', video: `${import.meta.env.BASE_URL}Video/Globaltt Mwc Short Video Ver-4 Min.mp4` },
-        { title: 'Satellite on the Move for Drones', img: `${import.meta.env.BASE_URL}Video/SOTM.webp`, desc: 'Advanced satellite solutions for drones.', video: `${import.meta.env.BASE_URL}Video/SATELLITE ON THE MOVE FOR DRONES.mp4` },
+        { title: 'GlobalTT Intro', img: `${import.meta.env.BASE_URL}Video/GTT.webp`, desc: 'Introduction to GlobalTT satellite services.', video: `${import.meta.env.BASE_URL}Video/GLOBALTT%20INTRO.mp4` },
+        { title: 'Who we are - Satellite differences', img: `${import.meta.env.BASE_URL}Video/GTT2.webp`, desc: 'Understanding satellite technologies.', video: `${import.meta.env.BASE_URL}Video/Who%20We%20Are%20-%20Satellite%20Differences.mp4` },
+        { title: 'How Teleports Work', img: `${import.meta.env.BASE_URL}Video/HIW.webp`, desc: 'A look at how teleports function.', video: `${import.meta.env.BASE_URL}Video/How%20Teleports%20WOrks.mp4` },
+        { title: 'GlobalTT MWC Short Video', img: `${import.meta.env.BASE_URL}Video/MWC.png`, desc: 'Highlight from MWC event.', video: `${import.meta.env.BASE_URL}Video/Globaltt%20Mwc%20Short%20Video%20Ver-4%20Min.mp4` },
+        { title: 'Satellite on the Move for Drones', img: `${import.meta.env.BASE_URL}Video/SOTM.webp`, desc: 'Advanced satellite solutions for drones.', video: `${import.meta.env.BASE_URL}Video/SATELLITE%20ON%20THE%20MOVE%20FOR%20DRONES.mp4` },
     ],
     brochure: [],
     logos: []
