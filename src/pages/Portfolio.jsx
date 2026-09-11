@@ -13,6 +13,12 @@ const projects = {
         { title: 'HighEx Logistics', img: `${import.meta.env.BASE_URL}images/highexlogistics.webp`, desc: 'Streamlined web platform...', tags: ['Service Design', 'Web Solutions'], link: '/portfolio/highex' },
         { title: 'GlobalTT SS', img: `${import.meta.env.BASE_URL}images/globaltt-ss.webp`, desc: 'Comprehensive digital platform...', tags: ['Enterprise Web', 'Technical Architecture'], link: '/portfolio/globaltt' },
     ],
+    uiux: [
+        { title: 'shuttleIQ', img: `${import.meta.env.BASE_URL}images/shuttleiq-hero.jpg`, desc: 'Community-driven badminton booking & matchmaking platform for Dubai.', tags: ['UI/UX Architect', 'Case Study'], link: '/portfolio/shuttleiq' },
+        { title: 'Perridon Webpages', img: `${import.meta.env.BASE_URL}images/perridon-hero.jpg`, desc: 'High-converting landing pages for premium travel.', tags: ['UI/UX Designer', 'Landing Pages'], link: '/portfolio/perridon' },
+        { title: 'CreativeProf AI Website Builder Template', img: `${import.meta.env.BASE_URL}images/creativeprof-hero.jpg`, desc: 'Comprehensive AI-ready website builder template.', tags: ['UI/UX Designer', 'Template Design'], link: '/portfolio/creativeprof' },
+        { title: 'Musician AI Website Builder Template', img: `${import.meta.env.BASE_URL}images/musician-hero.jpg`, desc: 'AI-ready website builder template for musicians & bands.', tags: ['UI/UX Designer', 'Template Design'], link: '/portfolio/musician' },
+    ],
     animation: [
         { title: 'GlobalTT Intro', img: `${import.meta.env.BASE_URL}Video/GTT.webp`, desc: 'Introduction to GlobalTT satellite services.', video: `${import.meta.env.BASE_URL}Video/GLOBALTT%20INTRO.mp4` },
         { title: 'Who we are - Satellite differences', img: `${import.meta.env.BASE_URL}Video/GTT2.webp`, desc: 'Understanding satellite technologies.', video: `${import.meta.env.BASE_URL}Video/Who%20We%20Are%20-%20Satellite%20Differences.mp4` },
@@ -21,18 +27,18 @@ const projects = {
         { title: 'Satellite on the Move for Drones', img: `${import.meta.env.BASE_URL}Video/SOTM.webp`, desc: 'Advanced satellite solutions for drones.', video: `${import.meta.env.BASE_URL}Video/SATELLITE%20ON%20THE%20MOVE%20FOR%20DRONES.mp4` },
     ],
     brochure: [
-        { title: 'GlobalTT Profile Flyer', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/A3_A4_bifold_Flayer_GLOBALTT_Profile_ENG_min.pdf` },
-        { title: 'Kymeta Terminal Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/A4_TRIFOLD_KYMETA_BROCHURE_U_TERMINAL.pdf` },
-        { title: 'Tracker Stick Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/Brochure_Tracker_Stick_A4_GLOBALTT_IPSEOS.pdf` },
-        { title: 'GlobalTT Orion IP Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/GLOBALTT_Brochure_Orion_IP_A4.pdf` },
-        { title: 'GlobalTT Orion Edge 2 Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/GLOBALTT_Broshure_Orion_Edge_2_A4.pdf` },
-        { title: 'GLOBALTT General Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/GLOBALTT_GENERAL_BROCHURE.pdf` },
-        { title: 'Hirec 100 Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/HIREC_100_WATER_REPELLENT_A4_TRIPIC_BROCHURE.pdf` },
-        { title: 'IP-Satcube Version 1', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/IP_SATCUBE_1IPSEOS_VERSION_1.pdf` },
-        { title: 'Kymeta Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/Kymeta_brochure_U8_Terminal.pdf` },
-        { title: 'Maritime Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/MARITIME_BROCHURE_TRIFOLD_A4.pdf` },
+        { title: 'GlobalTT Profile Flyer', img: `${import.meta.env.BASE_URL}images/brochures/GTT-profileWebsite.jpg`, file: `${import.meta.env.BASE_URL}brochures-flyers/A3_A4_bifold_Flayer_GLOBALTT_Profile_ENG_min.pdf` },
+        { title: 'Kymeta Terminal Brochure', img: `${import.meta.env.BASE_URL}images/brochures/Kymeta.jpg`, file: `${import.meta.env.BASE_URL}brochures-flyers/A4_TRIFOLD_KYMETA_BROCHURE_U_TERMINAL.pdf` },
+        { title: 'Tracker Stick Brochure', img: `${import.meta.env.BASE_URL}images/brochures/tracker.jpg`, file: `${import.meta.env.BASE_URL}brochures-flyers/Brochure_Tracker_Stick_A4_GLOBALTT_IPSEOS.pdf` },
+        { title: 'GlobalTT Orion IP Brochure', img: `${import.meta.env.BASE_URL}images/brochures/Orin.jpg`, file: `${import.meta.env.BASE_URL}brochures-flyers/GLOBALTT_Brochure_Orion_IP_A4.pdf` },
+        { title: 'GlobalTT Orion Edge 2 Brochure', img: `${import.meta.env.BASE_URL}images/brochures/Orin2.jpg`, file: `${import.meta.env.BASE_URL}brochures-flyers/GLOBALTT_Broshure_Orion_Edge_2_A4.pdf` },
+        { title: 'GLOBALTT General Brochure', img: `${import.meta.env.BASE_URL}images/brochures/GLOBALTT.jpg`, file: `${import.meta.env.BASE_URL}brochures-flyers/GLOBALTT_GENERAL_BROCHURE.pdf` },
+        { title: 'Hirec 100 Brochure', img: `${import.meta.env.BASE_URL}images/brochures/Hirec 100.jpg`, file: `${import.meta.env.BASE_URL}brochures-flyers/HIREC_100_WATER_REPELLENT_A4_TRIPIC_BROCHURE.pdf` },
+        { title: 'IP-Satcube Version 1', img: `${import.meta.env.BASE_URL}images/brochures/SATCUBE.jpg`, file: `${import.meta.env.BASE_URL}brochures-flyers/IP_SATCUBE_1IPSEOS_VERSION_1.pdf` },
+        { title: 'Kymeta Brochure', img: `${import.meta.env.BASE_URL}images/brochures/Kymeta.jpg`, file: `${import.meta.env.BASE_URL}brochures-flyers/Kymeta_brochure_U8_Terminal.pdf` },
+        { title: 'Maritime Brochure', img: `${import.meta.env.BASE_URL}images/brochures/maritimeVSAT.jpg`, file: `${import.meta.env.BASE_URL}brochures-flyers/MARITIME_BROCHURE_TRIFOLD_A4.pdf` },
         { title: 'Night Booster', img: `${import.meta.env.BASE_URL}brochures-flyers/night_booster.jpg`, file: `${import.meta.env.BASE_URL}brochures-flyers/night_booster.jpg` },
-        { title: 'Virtual Manager ERP', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/VIRTUAL_MANAGER_ERP_MODL_3.pdf` },
+        { title: 'Virtual Manager ERP', img: `${import.meta.env.BASE_URL}images/brochures/vIRTUALmANAGER.jpg`, file: `${import.meta.env.BASE_URL}brochures-flyers/VIRTUAL_MANAGER_ERP_MODL_3.pdf` },
         { title: 'WiFi Hotspot Brochure', img: `${import.meta.env.BASE_URL}brochures-flyers/A4_Brochure_Mockup_8.4_Version.png`, file: `${import.meta.env.BASE_URL}brochures-flyers/WIFI_HOTSPOT_BROCHURE_A4_TRIPIC_GLOBALTT.pdf` },
     ],
     logos: {
@@ -80,6 +86,7 @@ const Portfolio = () => {
 
     const tabs = [
         { id: 'websites', name: 'Websites & Templates' },
+        { id: 'uiux', name: 'UI UX Projects' },
         { id: 'animation', name: 'Animation & Video Projects' },
         { id: 'brochure', name: 'Brochure and Flyers' },
         { id: 'logos', name: 'Logos and Graphics' },
@@ -109,7 +116,8 @@ const Portfolio = () => {
                 <div className="aspect-video bg-black rounded-xl overflow-hidden mb-6 relative cursor-pointer" onClick={(e) => { 
                     if (project.video) { e.preventDefault(); setModalContent({ type: 'video', src: project.video }); }
                     else if (project.file) { e.preventDefault(); setModalContent({ type: 'file', src: project.file }); }
-                    else { e.preventDefault(); setModalContent({ type: 'image', src: project.img }); }
+                    else if (!project.link) { e.preventDefault(); setModalContent({ type: 'image', src: project.img }); }
+                    // If project.link exists and no video/file, we don't call preventDefault, allowing Link to handle it
                 }}>
                     <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:opacity-80 transition-opacity" />
                     {(project.video || project.file || !project.link) && (

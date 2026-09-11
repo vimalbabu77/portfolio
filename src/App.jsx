@@ -11,6 +11,10 @@ import ProjectNadia from './pages/portfolio/ProjectNadia';
 import ProjectFlabba from './pages/portfolio/ProjectFlabba';
 import ProjectHighEx from './pages/portfolio/ProjectHighEx';
 import ProjectGlobalTT from './pages/portfolio/ProjectGlobalTT';
+import ProjectShuttleIQ from './pages/portfolio/ProjectShuttleIQ';
+import ProjectPerridon from './pages/portfolio/ProjectPerridon';
+import ProjectCreativeProf from './pages/portfolio/ProjectCreativeProf';
+import ProjectMusician from './pages/portfolio/ProjectMusician';
 
 const App = () => {
     return (
@@ -25,6 +29,10 @@ const App = () => {
                 <Route path="/portfolio/flabba" element={<ProjectFlabba />} />
                 <Route path="/portfolio/highex" element={<ProjectHighEx />} />
                 <Route path="/portfolio/globaltt" element={<ProjectGlobalTT />} />
+                <Route path="/portfolio/shuttleiq" element={<ProjectShuttleIQ />} />
+                <Route path="/portfolio/perridon" element={<ProjectPerridon />} />
+                <Route path="/portfolio/creativeprof" element={<ProjectCreativeProf />} />
+                <Route path="/portfolio/musician" element={<ProjectMusician />} />
                 <Route path="/skills" element={<Skills />} />
                 <Route path="/experience" element={<Experience />} />
                 <Route path="/contact" element={<Contact />} />
